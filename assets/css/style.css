@@ -1,0 +1,234 @@
+/* 共通 */
+:root {
+  --box-shadow: 0 0px 3px 0 rgba(0, 0, 0, 0.16), 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* 共通 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* 共通 */
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #f3f6f9;
+}
+
+/* 共通 */
+nav {
+  box-shadow: var(--box-shadow);
+  background-color: #fff;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* 共通 */
+.nav-underline .nav-link.active,
+.nav-underline .show > .nav-link {
+  color: #0d6efd !important;
+  padding: 1rem 2rem !important;
+  font-size: large;
+}
+
+/* 共通 */
+.nav-underline .nav-link,
+.nav-underline .show > .nav-link {
+  color: #d3d3d3 !important;
+  padding: 1rem 2rem !important;
+  font-size: large;
+  font-weight: bold;
+}
+
+/* 共通 */
+.nav-link:hover {
+  color: #000 !important;
+}
+
+/* 共通 */
+.navbar-brand {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: italic;
+  padding: 0;
+}
+
+/* 共通 */
+.offcanvas-body {
+  justify-content: right;
+}
+
+.home h1,
+.profile-section h2,
+.portfolio-section h2 {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* style.css */
+.home {
+  background-image: url("../img/main_bg_pc.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 2;
+  padding: 200px 0;
+}
+
+/* style.css */
+.home::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(37, 39, 71, 0.7);
+  z-index: -1;
+}
+
+/* 共通 */
+.only-view-sp {
+  display: none;
+}
+
+/* 共通 */
+.only-view-pc {
+  display: block;
+}
+
+/* skills.css profiles.css services.css contact.css */
+section {
+  padding: 100px 0 !important;
+}
+
+/* 共通 */
+.footer-fixed-bottom {
+  height: 100vh !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+/* 共通 */
+footer {
+  margin-top: auto;
+  background-color: #dcdcdc;
+  color: #888;
+  width: 100%;
+  font-size: large;
+}
+
+/* services.css */
+.services-icon {
+  background-color: #0d6efd;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 32px;
+  border-radius: 100px;
+  margin-bottom: 15px;
+}
+
+/* services.css */
+.services-card {
+  box-shadow: var(--box-shadow);
+  border: none;
+  background-color: #fff;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* services.css */
+.services-card:hover {
+  box-shadow: none;
+  transform: translateY(5px);
+}
+
+@media screen and (max-width: 990px) {
+  /* 共通 */
+  .navbar {
+    padding: 12px 0 !important;
+  }
+
+  /* 共通 */
+  .nav-link.active {
+    color: #0d6efd !important;
+    font-size: large !important;
+    font-weight: bold !important;
+  }
+
+  /* 共通 */
+  .nav-link {
+    color: #d3d3d3 !important;
+    font-weight: bold !important;
+  }
+
+  /* 共通 */
+  .offcanvas-header {
+    background-color: #dfeff3 !important;
+  }
+
+  /* 共通 */
+  .only-view-pc {
+    display: none !important;
+  }
+
+  /* 共通 */
+  .only-view-sp {
+    display: flex;
+    width: 100%;
+  }
+
+  /* 共通 */
+  .navbar-toggler {
+    margin-left: 2.5rem;
+  }
+
+  /* 共通 */
+  .footer-fixed-bottom {
+    height: 100vh !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  /* 共通 */
+  footer {
+    margin-top: auto !important;
+    background: #ccc !important;
+    color: #333 !important;
+    width: 100% !important;
+  }
+
+  /* services.css */
+  .card {
+    box-shadow: var(--box-shadow);
+    border: none;
+    background-color: #fff;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* services.css */
+  .card:hover {
+    box-shadow: none;
+    transform: translateY(5px);
+  }
+}
