@@ -15,7 +15,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
-  background-image: url('../img/main_bg_pc.jpg');
+  background-image: url("../img/main_bg_pc.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -108,9 +108,10 @@ section {
 /* 共通 */
 footer {
   margin-top: auto !important;
-  background: #ccc !important;
-  color: #333 !important;
+  background-color: #dcdcdc !important;
+  color: #888 !important;
   width: 100% !important;
+  font-size: large !important;
 }
 
 @media screen and (max-width: 990px) {
@@ -163,9 +164,10 @@ footer {
   /* 共通 */
   footer {
     margin-top: auto !important;
-    background: #ccc !important;
-    color: #333 !important;
+    background-color: #dcdcdc !important;
+    color: #888 !important;
     width: 100% !important;
+    font-size: large !important;
   }
 
   /* services.css */
