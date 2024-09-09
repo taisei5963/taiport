@@ -1,4 +1,3 @@
-<!-- 「header」タグ共通ファイル -->
 <nav class="navbar navbar-expand-lg p-0 fixed-top bg-white">
   <div class="container">
     <div class="only-view-sp">
