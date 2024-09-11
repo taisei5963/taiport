@@ -9,6 +9,7 @@ services:
       - 80:80
     volumes:
       - ./web:/var/www/html
+      - ./config:/var/www/config
     command: >
       bash -c "a2enmod rewrite && apache2-foreground"
 
