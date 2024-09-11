@@ -1,4 +1,6 @@
 <?php
+  require_once __DIR__.'/../config/config.php';
+  
   $page_title = 'Home';
 
   $active_home = 'active';
@@ -22,7 +24,7 @@
         <div class="row">
           <div class="col-lg-9 mx-auto text-center">
             <h1 class="display-4 text-white fw-bold">
-              TaiPort / TAISEI KATO
+              <?= APP_NAME ?> / <?= APP_CREATE_NAME ?>
             </h1>
             <p class="fs-5 text-white my-3 fw-bold">This is my portfolio site.</p>
             <a href="/taiport/contact" class="btn btn-outline-light">CONTACT.</a>
@@ -82,7 +84,7 @@
 
         <div class="row row-cols-1 row-cols-md-3 g-4">
           <div class="col">
-            <a href="./hideyoshi.html">
+            <a href="/taiport/portfolio/hideyoshi">
               <div class="card services-card h-100">
                 <div class="card-body">
                   <h5 class="card-title fw-bold d-flex align-items-center">
@@ -102,24 +104,26 @@
             </a>
           </div>
           <div class="col">
-            <div class="card services-card h-100">
-              <div class="card-body">
-                <h5 class="card-title fw-bold d-flex align-items-center">
-                  <div class="services-icon fs-3 me-3">
-                    <span class="mdi mdi-monitor"></span>
-                  </div>
-                  <div class="mb-3">ibooks</div>
-                </h5>
-                <h6 class="card-subtitle mb-2 text-body-secondary">
-                  IT業界向け本紹介サイト
-                </h6>
-                <p class="card-text">
-                  IT業界に就職されている方をメインターゲットに開発したWEBシステム
-                </p>
+            <a href="/taiport/portfolio/ibooks">
+              <div class="card services-card h-100">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold d-flex align-items-center">
+                    <div class="services-icon fs-3 me-3">
+                      <span class="mdi mdi-monitor"></span>
+                    </div>
+                    <div class="mb-3">ibooks</div>
+                  </h5>
+                  <h6 class="card-subtitle mb-2 text-body-secondary">
+                    IT業界向け本紹介サイト
+                  </h6>
+                  <p class="card-text">
+                    IT業界に就職されている方をメインターゲットに開発したWEBサイト
+                  </p>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
-          <div class="col">
+          <!-- <div class="col">
             <div class="card services-card h-100">
               <div class="card-body">
                 <h5 class="card-title fw-bold d-flex align-items-center">
@@ -154,7 +158,7 @@
                 </p>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </section>

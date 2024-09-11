@@ -1,9 +1,13 @@
+<?php
+  require_once __DIR__ . '/../../config/config.php';
+?>
+
 <nav class="navbar navbar-expand-lg p-0 fixed-top bg-white">
   <div class="container">
     <div class="only-view-sp">
       <div class="col-3"></div>
       <div class="col-6">
-        <a class="navbar-brand fs-2 ms-5" href="/taiport">TaiPort</a>
+        <a class="navbar-brand fs-2 ms-5" href="/taiport"><?= APP_NAME ?></a>
       </div>
       <div class="col-3">
         <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
@@ -13,13 +17,13 @@
     </div>
 
     <div class="only-view-pc">
-      <a class="navbar-brand fs-2" href="/taiport">TaiPort</a>
+      <a class="navbar-brand fs-2" href="/taiport"><?= APP_NAME ?></a>
     </div>
 
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
       <div class="offcanvas-header">
         <h5 class="offcanvas-title fw-bold" id="offcanvasNavbar2Label">
-          TaiPort / TAISEI KATO
+          <?= APP_NAME ?> / <?= APP_CREATE_NAME ?>
         </h5>
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>

@@ -12,6 +12,10 @@
     case 'Contact':
       $css_name = 'contact.css';
       break;
+
+    case 'Portfolio':
+      $css_name = 'portfolio.css';
+      break;
     
     default :
       $css_name = 'style.css';

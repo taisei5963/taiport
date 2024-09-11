@@ -1,23 +1,18 @@
-/* 共通 */
+
 :root {
   --box-shadow: 0 0px 3px 0 rgba(0, 0, 0, 0.16), 0 2px 2px 0 rgba(0, 0, 0, 0.1);
 }
-
-/* 共通 */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-/* 共通 */
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
+  background-color: #f3f6f9;
 }
-
-/* 共通 */
 nav {
   box-shadow: var(--box-shadow);
   background-color: #fff;
@@ -26,16 +21,12 @@ nav {
   font-weight: 700;
   font-style: italic;
 }
-
-/* 共通 */
 .nav-underline .nav-link.active,
 .nav-underline .show > .nav-link {
   color: #0d6efd !important;
   padding: 1rem 2rem !important;
   font-size: large;
 }
-
-/* 共通 */
 .nav-underline .nav-link,
 .nav-underline .show > .nav-link {
   color: #d3d3d3 !important;
@@ -43,13 +34,9 @@ nav {
   font-size: large;
   font-weight: bold;
 }
-
-/* 共通 */
 .nav-link:hover {
   color: #000 !important;
 }
-
-/* 共通 */
 .navbar-brand {
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
@@ -57,8 +44,6 @@ nav {
   font-style: italic;
   padding: 0;
 }
-
-/* 共通 */
 .offcanvas-body {
   justify-content: right;
 }
@@ -70,13 +55,9 @@ nav {
   font-style: italic;
   margin-bottom: 1.5rem;
 }
-
-/* 共通 */
 .only-view-sp {
   display: none;
 }
-
-/* 共通 */
 .only-view-pc {
   display: block;
 }
@@ -95,90 +76,55 @@ section {
   list-style: none;
   margin-left: -32px;
 }
-
-/* 共通 */
 .footer-fixed-bottom {
   height: 100vh !important;
   display: flex !important;
   flex-direction: column !important;
 }
-
-/* 共通 */
 footer {
   margin-top: auto !important;
-  background: #ccc !important;
-  color: #333 !important;
+  background-color: #dcdcdc !important;
+  color: #888 !important;
   width: 100% !important;
+  font-size: large !important;
 }
 
 @media screen and (max-width: 990px) {
-  /* 共通 */
   .navbar {
     padding: 12px 0 !important;
   }
-
-  /* 共通 */
   .nav-link.active {
     color: #0d6efd !important;
     font-size: large !important;
     font-weight: bold !important;
   }
-
-  /* 共通 */
   .nav-link {
     color: #d3d3d3 !important;
     font-weight: bold !important;
   }
-
-  /* 共通 */
   .offcanvas-header {
     background-color: #dfeff3 !important;
   }
-
-  /* 共通 */
   .only-view-pc {
     display: none !important;
   }
-
-  /* 共通 */
   .only-view-sp {
     display: flex;
     width: 100%;
   }
-
-  /* 共通 */
   .navbar-toggler {
     margin-left: 2.5rem;
   }
-
-  /* 共通 */
   .footer-fixed-bottom {
     height: 100vh !important;
     display: flex !important;
     flex-direction: column !important;
   }
-
-  /* 共通 */
   footer {
     margin-top: auto !important;
-    background: #ccc !important;
-    color: #333 !important;
+    background-color: #dcdcdc !important;
+    color: #888 !important;
     width: 100% !important;
-  }
-
-  /* services.css */
-  .card {
-    box-shadow: var(--box-shadow);
-    border: none;
-    background-color: #fff;
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-  }
-
-  /* services.css */
-  .card:hover {
-    box-shadow: none;
-    transform: translateY(5px);
+    font-size: large !important;
   }
 }
