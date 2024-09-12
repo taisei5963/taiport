@@ -6,6 +6,6 @@
   $url_list['/taiport/skills'] = "/skills.php";
   $url_list['/taiport/contact'] = "/contact.php";
 
-  $url_list['/taiport/portfolio/hideyoshi'] = "/hideyoshi.php";
-  $url_list['/taiport/portfolio/ibooks'] = "/ibooks.php";
+  $url_list['/taiport/portfolio/hideyoshi'] = "/portfolio/hideyoshi.php";
+  $url_list['/taiport/portfolio/ibooks'] = "/portfolio/ibooks.php";
 ?>

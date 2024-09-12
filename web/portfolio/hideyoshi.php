@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__.'/../config/config.php';
+require_once __DIR__.'/../../config/config.php';
 
 $page_title = 'Portfolio';
 
@@ -65,7 +65,7 @@ $active_contact = null;
               <p class="mt-2">※ 現在開発中</p>
             </div>
             <div class="col-12 text-center">
-              <a href="/taiport" class="btn btn-secondary btn-lg w-25 mt-3">
+              <a href="/taiport" class="btn btn-outline-secondary btn-lg w-25 mt-3">
                 戻る
               </a>
             </div>

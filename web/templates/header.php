@@ -36,7 +36,7 @@
             <a id="skillId" class="nav-link <?php if(isset($active_skills)) echo 'active' ?>" href="/taiport/skills">Skills</a>
           </li>
           <li class="nav-item">
-            <a id="contactId" class="nav-link <?php if(isset($active_contact)) echo 'active' ?>" href="/taiport/contact">Contact</a>
+            <a id="contactId" class="nav-link disabled" aria-disabled="true" href="/taiport/contact">Contact（※使用不可）</a>
           </li>
         </ul>
       </div>

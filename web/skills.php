@@ -190,14 +190,6 @@ $active_contact = null;
           </ul>
           <ul class="list-group border-0">
             <li class="list-group-item mx-auto border-0">
-              <img src="/assets/img/logo/Talend.svg" alt="talend" width="90" height="90">
-            </li>
-            <li class="list-group-item mx-auto border-0">
-              Talend：6ヶ月
-            </li>
-          </ul>
-          <ul class="list-group border-0">
-            <li class="list-group-item mx-auto border-0">
               <img src="/assets/img/logo/Vscode.svg" alt="vscode" width="90" height="90">
             </li>
             <li class="list-group-item mx-auto border-0">
@@ -218,14 +210,6 @@ $active_contact = null;
             </li>
             <li class="list-group-item mx-auto border-0">
               Spring Tool Suite：5ヶ月
-            </li>
-          </ul>
-          <ul class="list-group border-0">
-            <li class="list-group-item mx-auto border-0">
-              <img src="/assets/img/logo/Thymeleaf.svg" alt="thymeleaf" width="90" height="90">
-            </li>
-            <li class="list-group-item mx-auto border-0">
-              Thymeleaf：6ヶ月
             </li>
           </ul>
           <ul class="list-group border-0">
