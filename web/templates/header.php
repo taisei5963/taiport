@@ -22,8 +22,8 @@
 
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
       <div class="offcanvas-header">
-        <h5 class="offcanvas-title fw-bold" id="offcanvasNavbar2Label">
-          <?= APP_NAME ?> / <?= APP_CREATE_NAME ?>
+        <h5 class="offcanvas-title fs-3 fw-bold" id="offcanvasNavbar2Label">
+          <?= APP_NAME ?>
         </h5>
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>

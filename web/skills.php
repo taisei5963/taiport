@@ -1,9 +1,9 @@
 <?php
-$page_title = 'Skills';
+  $page_title = 'Skills';
 
-$active_home = null;
-$active_skills = 'active';
-$active_contact = null;
+  $active_home = null;
+  $active_skills = 'active';
+  $active_contact = null;
 ?>
 
 <!DOCTYPE html>
@@ -56,7 +56,7 @@ $active_contact = null;
               <br>システムテスト：1年 1ヶ月
             </li>
           </ul>
-          <h3 class="text-center w-100 my-3">【言語】</h3>
+          <h3 class="text-center w-100 mt-5 mb-3">【言語】</h3>
           <ul class="list-group border-0">
             <li class="list-group-item mx-auto border-0">
               <img src="/assets/img/logo/Java.svg" alt="Java" width="90" height="90">
@@ -70,7 +70,7 @@ $active_contact = null;
               <img src="/assets/img/logo/Html5.svg" alt="html" width="90" height="90">
             </li>
             <li class="list-group-item mx-auto border-0">
-              HTML：1年
+              HTML：1年 1ヶ月
             </li>
           </ul>
           <ul class="list-group border-0">
@@ -97,7 +97,7 @@ $active_contact = null;
               TypeScript：4ヶ月
             </li>
           </ul>
-          <h3 class="text-center w-100 my-3">【フレームワーク】</h3>
+          <h3 class="text-center w-100 mt-5 mb-3">【フレームワーク】</h3>
           <ul class="list-group border-0">
             <li class="list-group-item mx-auto border-0">
               <img src="/assets/img/logo/Spring.svg" alt="spring" width="90" height="90">
@@ -114,13 +114,29 @@ $active_contact = null;
               VueJS：1年
             </li>
           </ul>
-          <h3 class="text-center w-100 my-3">【DB】</h3>
+          <h3 class="text-center w-100 mt-5 mb-3">【DB】</h3>
+          <ul class="list-group border-0">
+            <li class="list-group-item mx-auto border-0">
+              <img src="/assets/img/logo/Oracle.svg" alt="oracle" width="90" height="90">
+            </li>
+            <li class="list-group-item mx-auto border-0">
+              OracleDB：1年 6ヶ月
+            </li>
+          </ul>
           <ul class="list-group border-0">
             <li class="list-group-item mx-auto border-0">
               <img src="/assets/img/logo/Mysql.svg" alt="mysql" width="90" height="90">
             </li>
             <li class="list-group-item mx-auto border-0">
               MySQL：1年 3ヶ月
+            </li>
+          </ul>
+          <ul class="list-group border-0">
+            <li class="list-group-item mx-auto border-0">
+              <img src="/assets/img/logo/Postgresql.svg" alt="postgresql" width="90" height="90">
+            </li>
+            <li class="list-group-item mx-auto border-0">
+              PostgreSQL：7ヶ月
             </li>
           </ul>
           <ul class="list-group border-0">
@@ -139,29 +155,21 @@ $active_contact = null;
               SQLServer：6ヶ月
             </li>
           </ul>
+          <h3 class="text-center w-100 mt-5 mb-3">【その他】</h3>
           <ul class="list-group border-0">
             <li class="list-group-item mx-auto border-0">
-              <img src="/assets/img/logo/Postgresql.svg" alt="postgresql" width="90" height="90">
+              <img src="/assets/img/logo/Gitlab.svg" alt="gitlab" width="90" height="90">
             </li>
             <li class="list-group-item mx-auto border-0">
-              PostgreSQL：7ヶ月
+              GitLab：2年 9ヶ月
             </li>
           </ul>
           <ul class="list-group border-0">
             <li class="list-group-item mx-auto border-0">
-              <img src="/assets/img/logo/Oracle.svg" alt="oracle" width="90" height="90">
+              <img src="/assets/img/logo/IntellijIdea.svg" alt="intellijIdea" width="90" height="90">
             </li>
             <li class="list-group-item mx-auto border-0">
-              OracleDB：1年 6ヶ月
-            </li>
-          </ul>
-          <h3 class="text-center w-100 my-3">【その他】</h3>
-          <ul class="list-group border-0">
-            <li class="list-group-item mx-auto border-0">
-              <img src="/assets/img/logo/Eclipse.svg" alt="eclipse" width="90" height="90">
-            </li>
-            <li class="list-group-item mx-auto border-0">
-              Eclipse：1年
+              IntellijIdea：1年 1ヶ月
             </li>
           </ul>
           <ul class="list-group border-0">
@@ -170,6 +178,22 @@ $active_contact = null;
             </li>
             <li class="list-group-item mx-auto border-0">
               JUnit：1年 1ヶ月
+            </li>
+          </ul>
+          <ul class="list-group border-0">
+            <li class="list-group-item mx-auto border-0">
+              <img src="/assets/img/logo/Vscode.svg" alt="vscode" width="90" height="90">
+            </li>
+            <li class="list-group-item mx-auto border-0">
+              VSCode：1年
+            </li>
+          </ul>
+          <ul class="list-group border-0">
+            <li class="list-group-item mx-auto border-0">
+              <img src="/assets/img/logo/Eclipse.svg" alt="eclipse" width="90" height="90">
+            </li>
+            <li class="list-group-item mx-auto border-0">
+              Eclipse：8ヶ月
             </li>
           </ul>
           <ul class="list-group border-0">
@@ -190,10 +214,10 @@ $active_contact = null;
           </ul>
           <ul class="list-group border-0">
             <li class="list-group-item mx-auto border-0">
-              <img src="/assets/img/logo/Vscode.svg" alt="vscode" width="90" height="90">
+              <img src="/assets/img/logo/Github.svg" alt="github" width="90" height="90">
             </li>
             <li class="list-group-item mx-auto border-0">
-              VSCode：1年
+              GitHub：6ヶ月
             </li>
           </ul>
           <ul class="list-group border-0">
@@ -210,22 +234,6 @@ $active_contact = null;
             </li>
             <li class="list-group-item mx-auto border-0">
               Spring Tool Suite：5ヶ月
-            </li>
-          </ul>
-          <ul class="list-group border-0">
-            <li class="list-group-item mx-auto border-0">
-              <img src="/assets/img/logo/Gitlab.svg" alt="gitlab" width="90" height="90">
-            </li>
-            <li class="list-group-item mx-auto border-0">
-              GitLab：2年 9ヶ月
-            </li>
-          </ul>
-          <ul class="list-group border-0">
-            <li class="list-group-item mx-auto border-0">
-              <img src="/assets/img/logo/Github.svg" alt="github" width="90" height="90">
-            </li>
-            <li class="list-group-item mx-auto border-0">
-              GitHub：6ヶ月
             </li>
           </ul>
         </div>
