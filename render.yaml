@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: my-portfolio-site
+    env: php
+    plan: free
+    buildCommand: ""
+    startCommand: ""
+    autoDeploy: true
