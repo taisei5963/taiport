@@ -8,7 +8,7 @@ WORKDIR /var/www/html
 COPY . .
 
 # Change the DocumentRoot to /var/www/html/web
-RUN sed -i 's|/var/www/html|/var/www/html/web|' /etc/apache2/sites-available/000-default.conf
+RUN sed -i 's|/var/www/html|/var/www/html/web|/var/www/html/config|' /etc/apache2/sites-available/000-default.conf
 
 # Enable .htaccess overrides
 RUN sed -i 's/AllowOverride None/AllowOverride All/' /etc/apache2/apache2.conf
