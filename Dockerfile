@@ -23,10 +23,10 @@ RUN sed -i 's/AllowOverride None/AllowOverride All/' /etc/apache2/apache2.conf
 RUN a2enmod rewrite
 
 # Set proper permissions for the web directory
-RUN chown -R www-data:www-data /var/www/html/web && chmod -R 755 /var/www/html/web
+RUN chown -R www-data:www-data /var/www/html && chmod -R 755 /var/www/html
 
 # Set proper permissions for the config directory (if needed)
-RUN chown -R www-data:www-data /var/www/config/config && chmod -R 755 /var/www/config/config
+RUN chown -R www-data:www-data /var/www/config && chmod -R 755 /var/www/config
 
 # Expose port 80
 EXPOSE 80
