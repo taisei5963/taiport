@@ -3,10 +3,6 @@
 //読み込み用ファイル宣言
 require_once(dirname(__FILE__) . '/mapping.php');
 
-// echo (empty($_SERVER['HTTPS']) ? 'http://' : 'https://') . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
-// echo $_SERVER['HTTP_HOST'];
-// exit;
-
 try {
   // セッション開始
   session_start();

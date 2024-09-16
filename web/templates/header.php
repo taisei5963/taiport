@@ -1,5 +1,7 @@
 <?php
-  require_once __DIR__ . '/../../config/config.php';
+  if ($_SERVER['HTTP_HOST'] === "localhost") {
+    require_once __DIR__.'/../config/config.php';
+  }
 ?>
 
 <nav class="navbar navbar-expand-lg p-0 fixed-top bg-white">
