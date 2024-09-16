@@ -29,6 +29,11 @@
               TaiPort / TAISEI KATO
             </h1>
             <p class="fs-5 text-white my-3 fw-bold">This is my portfolio site.</p>
+            <?php if ($_SERVER['HTTP_HOST'] === "localhost") { ?>
+              <a href="/taiport/contact" class="btn btn-outline-light">CONTACT.</a>
+            <?php } else { ?>
+              <a href="/contact" class="btn btn-outline-light">CONTACT.</a>
+            <?php } ?>
             <a href="/taiport/contact" class="btn btn-outline-light">CONTACT.</a>
           </div>
         </div>
