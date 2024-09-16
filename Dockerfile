@@ -4,17 +4,14 @@ FROM php:8.2.3-apache
 # Set the working directory to /var/www/html
 WORKDIR /var/www/html
 
-# Copy all project files into the working directory
-# COPY . .
-
 # Copy project files for the web application
 COPY ./web /var/www/html
 
 # Copy config files to /var/www/config
 COPY ./config /var/www/config
 
-# Change the DocumentRoot to /var/www/html/web
-RUN sed -i 's|/var/www/html|/var/www/html/web|' /etc/apache2/sites-available/000-default.conf
+# Change the DocumentRoot to /var/www/html
+RUN sed -i 's|/var/www/html|/var/www/html|' /etc/apache2/sites-available/000-default.conf
 
 # Enable .htaccess overrides
 RUN sed -i 's/AllowOverride None/AllowOverride All/' /etc/apache2/apache2.conf
