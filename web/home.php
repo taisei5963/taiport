@@ -1,6 +1,9 @@
 <?php
   if ($_SERVER['HTTP_HOST'] === "localhost") {
+    $access = true;
     require_once __DIR__.'/../config/config.php';
+  } else {
+    $access = false;
   }
 
   $page_title = 'Home';
@@ -30,9 +33,9 @@
             </h1>
             <p class="fs-5 text-white my-3 fw-bold">This is my portfolio site.</p>
             <?php if ($_SERVER['HTTP_HOST'] === "localhost") { ?>
-              <a href="/taiport/contact" class="btn btn-outline-light">CONTACT.</a>
+              <a href="/taiport/contact" class="btn btn-outline-light disabled" aria-disabled="true">CONTACT.</a>
             <?php } else { ?>
-              <a href="/contact" class="btn btn-outline-light">CONTACT.</a>
+              <a href="/contact" class="btn btn-outline-light disabled" aria-disabled="true">CONTACT.</a>
             <?php } ?>
           </div>
         </div>
@@ -90,7 +93,7 @@
 
         <div class="row row-cols-1 row-cols-md-3 g-4">
           <div class="col">
-            <?php if ($_SERVER['HTTP_HOST'] === "localhost") { ?>
+            <?php if ($access) { ?>
               <a href="/taiport/portfolio/hideyoshi">
             <?php } else { ?>
               <a href="/portfolio/hideyoshi">
@@ -114,7 +117,7 @@
             </a>
           </div>
           <div class="col">
-            <?php if ($_SERVER['HTTP_HOST'] === "localhost") { ?>
+            <?php if ($access) { ?>
               <a href="/taiport/portfolio/ibooks">
             <?php } else { ?>
               <a href="/portfolio/ibooks">

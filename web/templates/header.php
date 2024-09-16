@@ -1,6 +1,9 @@
 <?php
   if ($_SERVER['HTTP_HOST'] === "localhost") {
+    $access = true;
     require_once __DIR__.'/../config/config.php';
+  } else {
+    $access = false;
   }
 ?>
 
@@ -32,21 +35,21 @@
       <div class="offcanvas-body">
         <ul id="navbarId" class="navbar-nav nav-underline justify-content-end">
           <li class="nav-item">
-            <?php if ($_SERVER['HTTP_HOST'] === "localhost") { ?>
+            <?php if ($access) { ?>
               <a id="homeId" class="nav-link <?php if(isset($active_home)) echo 'active' ?>" href="/taiport">Home</a>
             <?php } else { ?>
               <a id="homeId" class="nav-link <?php if(isset($active_home)) echo 'active' ?>" href="/">Home</a>
             <?php } ?>
           </li>
           <li class="nav-item">
-            <?php if ($_SERVER['HTTP_HOST'] === "localhost") { ?>
+            <?php if ($access) { ?>
               <a id="skillId" class="nav-link <?php if(isset($active_skills)) echo 'active' ?>" href="/taiport/skills">Skills</a>
             <?php } else { ?>
               <a id="skillId" class="nav-link <?php if(isset($active_skills)) echo 'active' ?>" href="/skills">Skills</a>
             <?php } ?>
           </li>
           <li class="nav-item">
-            <?php if ($_SERVER['HTTP_HOST'] === "localhost") { ?>
+            <?php if ($access) { ?>
               <a id="contactId" class="nav-link disabled" aria-disabled="true" href="/contact">Contact（※使用不可）</a>
             <?php } else { ?>
               <a id="contactId" class="nav-link disabled" aria-disabled="true" href="/contact">Contact（※使用不可）</a>

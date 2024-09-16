@@ -1,4 +1,10 @@
 <?php
+if ($_SERVER['HTTP_HOST'] === "localhost") {
+  $access = true;
+} else {
+  $access = false;
+}
+
 $page_title = 'Portfolio';
 
 // アクティブタブ制御設定
@@ -12,7 +18,7 @@ $active_contact = null;
 <html lang="ja">
 
 <?php
-if ($_SERVER['HTTP_HOST'] === "localhost") {
+if ($access) {
   include("template/head.php");
 } else {
   include("../templates/head.php");
@@ -23,7 +29,7 @@ if ($_SERVER['HTTP_HOST'] === "localhost") {
   <div class="footer-fixed-bottom">
 
     <?php
-    if ($_SERVER['HTTP_HOST'] === "localhost") {
+    if ($access) {
       include("template/header.php");
     } else {
       include("../templates/header.php");
@@ -75,9 +81,15 @@ if ($_SERVER['HTTP_HOST'] === "localhost") {
             <p class="mt-2">※ 現在開発中</p>
           </div>
           <div class="col-12 text-center">
-            <a href="/taiport" class="btn btn-outline-secondary btn-lg w-25 mt-3">
-              戻る
-            </a>
+            <?php if ($access) { ?>
+              <a href="/taiport" class="btn btn-outline-secondary btn-lg w-25 mt-3">
+                戻る
+              </a>
+            <?php } else { ?>
+              <a href="/" class="btn btn-outline-secondary btn-lg w-25 mt-3">
+                戻る
+              </a>
+            <?php } ?>
           </div>
         </div>
       </div>
@@ -85,7 +97,7 @@ if ($_SERVER['HTTP_HOST'] === "localhost") {
 
     <!-- フッター -->
     <?php
-    if ($_SERVER['HTTP_HOST'] === "localhost") {
+    if ($access) {
       include("template/footer.php");
     } else {
       include("../templates/footer.php");
@@ -94,7 +106,7 @@ if ($_SERVER['HTTP_HOST'] === "localhost") {
   </div>
 
   <?php
-  if ($_SERVER['HTTP_HOST'] === "localhost") {
+  if ($access) {
     include("template/script.php");
   } else {
     include("../templates/script.php");

@@ -3,6 +3,12 @@
 //読み込み用ファイル宣言
 require_once(dirname(__FILE__) . '/mapping.php');
 
+if ($_SERVER['HTTP_HOST'] === "localhost") {
+  $access = true;
+} else {
+  $access = false;
+}
+
 try {
   // セッション開始
   session_start();
@@ -17,7 +23,7 @@ try {
   }
 
   // アクセス環境に応じてアクセス先を変更
-  if ($_SERVER['HTTP_HOST'] === "localhost") {
+  if ($access) {
     // mapping.phpに従って対象PHPに処理を移譲
     if (isset($local_url_list[$request_path])) {
       include(dirname(__FILE__) . $local_url_list[$request_path]);
