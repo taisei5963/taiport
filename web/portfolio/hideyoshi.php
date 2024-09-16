@@ -17,24 +17,12 @@ $active_contact = null;
 <!DOCTYPE html>
 <html lang="ja">
 
-<?php
-if ($access) {
-  include("template/head.php");
-} else {
-  include("../templates/head.php");
-}
-?>
+<?php include("../templates/head.php"); ?>
 
 <body>
   <div class="footer-fixed-bottom">
 
-    <?php
-    if ($access) {
-      include("template/header.php");
-    } else {
-      include("../templates/header.php");
-    }
-    ?>
+    <?php include("../templates/header.php"); ?>
 
     <section id="portfolio" class="portfolio-detail-section">
       <div class="container">
@@ -96,22 +84,10 @@ if ($access) {
     </section>
 
     <!-- フッター -->
-    <?php
-    if ($access) {
-      include("template/footer.php");
-    } else {
-      include("../templates/footer.php");
-    }
-    ?>
+    <?php include("../templates/footer.php"); ?>
   </div>
 
-  <?php
-  if ($access) {
-    include("template/script.php");
-  } else {
-    include("../templates/script.php");
-  }
-  ?>
+  <?php include("../templates/script.php"); ?>
 </body>
 
 </html>

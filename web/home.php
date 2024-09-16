@@ -117,7 +117,11 @@
             </a>
           </div>
           <div class="col">
-            <a href="/portfolio/ibooks">
+            <?php if ($access) { ?>
+              <a href="/taiport/portfolio/ibooks">
+            <?php } else { ?>
+              <a href="/portfolio/ibooks">
+            <?php } ?>
               <div class="card services-card h-100">
                 <div class="card-body">
                   <h5 class="card-title fw-bold d-flex align-items-center">
