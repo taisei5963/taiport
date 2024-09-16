@@ -1,0 +1,22 @@
+RewriteEngine On
+
+RewriteCond %{QUERY_STRING} !path=taiport
+RewriteRule ^taiport/?$ /?path=taiport [L,QSA]
+RewriteRule ^taiport/(.+)$ /taiport/?path=/taiport/$1 [L,QSA]
+
+# ルートURL (/) へのアクセスを home.php へリダイレクト
+RewriteRule ^$ home.php [L]
+
+# /skills へのアクセスを skills.php へリダイレクト
+RewriteRule ^skills/?$ skills.php [L]
+
+# /contact へのアクセスを contact.php へリダイレクト
+RewriteRule ^contact/?$ contact.php [L]
+
+# /portfolio/hideyoshi へのアクセスを portfolio/hideyoshi.php へリダイレクト
+RewriteRule ^portfolio/hideyoshi/?$ portfolio/hideyoshi.php [L]
+
+# 他のリクエストもファイル拡張子を隠す
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^/]+)/?$ $1.php [L]
