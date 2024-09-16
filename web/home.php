@@ -90,7 +90,11 @@
 
         <div class="row row-cols-1 row-cols-md-3 g-4">
           <div class="col">
-            <a href="/taiport/portfolio/hideyoshi">
+            <?php if ($_SERVER['HTTP_HOST'] === "localhost") { ?>
+              <a href="/taiport/portfolio/hideyoshi">
+            <?php } else { ?>
+              <a href="/portfolio/hideyoshi">
+            <?php } ?>
               <div class="card services-card h-100">
                 <div class="card-body">
                   <h5 class="card-title fw-bold d-flex align-items-center">
@@ -110,7 +114,11 @@
             </a>
           </div>
           <div class="col">
-            <a href="/taiport/portfolio/ibooks">
+            <?php if ($_SERVER['HTTP_HOST'] === "localhost") { ?>
+              <a href="/taiport/portfolio/ibooks">
+            <?php } else { ?>
+              <a href="/portfolio/ibooks">
+            <?php } ?>
               <div class="card services-card h-100">
                 <div class="card-body">
                   <h5 class="card-title fw-bold d-flex align-items-center">
