@@ -24,7 +24,7 @@ $active_contact = null;
         <div class="container">
           <div class="row row-bg-img">
             <div class="col-md-8 mx-auto text-center">
-              <h2>About「<?= PORTFOLIO_IBOOKS ?>」</h2>
+              <h2>About「ibooks」</h2>
             </div>
           </div>
 

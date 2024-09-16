@@ -1,6 +1,4 @@
 <?php
-require_once __DIR__.'/../../config/config.php';
-
 $page_title = 'Portfolio';
 
 // アクティブタブ制御設定
@@ -24,7 +22,7 @@ $active_contact = null;
         <div class="container">
           <div class="row row-bg-img">
             <div class="col-md-8 mx-auto text-center">
-              <h2>About「<?= PORTFOLIO_HIDEYOSHI ?>」</h2>
+              <h2>About「HIDEYOSHI」</h2>
             </div>
           </div>
 
