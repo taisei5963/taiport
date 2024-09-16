@@ -8,4 +8,6 @@
 
   $url_list['/taiport/portfolio/hideyoshi'] = "/portfolio/hideyoshi.php";
   $url_list['/taiport/portfolio/ibooks'] = "/portfolio/ibooks.php";
+
+  $url_list['https://taiport.onrender.com/'] = "/home.php";
 ?>
