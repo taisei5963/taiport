@@ -34,7 +34,6 @@
             <?php } else { ?>
               <a href="/contact" class="btn btn-outline-light">CONTACT.</a>
             <?php } ?>
-            <a href="/taiport/contact" class="btn btn-outline-light">CONTACT.</a>
           </div>
         </div>
       </div>
