@@ -26,7 +26,7 @@ RUN a2enmod rewrite
 RUN chown -R www-data:www-data /var/www/html/web && chmod -R 755 /var/www/html/web
 
 # Set proper permissions for the config directory (if needed)
-RUN chown -R www-data:www-data /var/www/config && chmod -R 755 /var/www/config
+RUN chown -R www-data:www-data /var/www/config/config && chmod -R 755 /var/www/config/config
 
 # Expose port 80
 EXPOSE 80
