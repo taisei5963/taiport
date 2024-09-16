@@ -32,13 +32,25 @@
       <div class="offcanvas-body">
         <ul id="navbarId" class="navbar-nav nav-underline justify-content-end">
           <li class="nav-item">
-            <a id="homeId" class="nav-link <?php if(isset($active_home)) echo 'active' ?>" href="/taiport">Home</a>
+            <?php if ($_SERVER['HTTP_HOST'] === "localhost") { ?>
+              <a id="homeId" class="nav-link <?php if(isset($active_home)) echo 'active' ?>" href="/taiport">Home</a>
+            <?php } else { ?>
+              <a id="homeId" class="nav-link <?php if(isset($active_home)) echo 'active' ?>" href="/">Home</a>
+            <?php } ?>
           </li>
           <li class="nav-item">
-            <a id="skillId" class="nav-link <?php if(isset($active_skills)) echo 'active' ?>" href="/taiport/skills">Skills</a>
+            <?php if ($_SERVER['HTTP_HOST'] === "localhost") { ?>
+              <a id="skillId" class="nav-link <?php if(isset($active_skills)) echo 'active' ?>" href="/taiport/skills">Skills</a>
+            <?php } else { ?>
+              <a id="skillId" class="nav-link <?php if(isset($active_skills)) echo 'active' ?>" href="/skills">Skills</a>
+            <?php } ?>
           </li>
           <li class="nav-item">
-            <a id="contactId" class="nav-link disabled" aria-disabled="true" href="/taiport/contact">Contact（※使用不可）</a>
+            <?php if ($_SERVER['HTTP_HOST'] === "localhost") { ?>
+              <a id="contactId" class="nav-link disabled" aria-disabled="true" href="/contact">Contact（※使用不可）</a>
+            <?php } else { ?>
+              <a id="contactId" class="nav-link disabled" aria-disabled="true" href="/contact">Contact（※使用不可）</a>
+            <?php } ?>
           </li>
         </ul>
       </div>
