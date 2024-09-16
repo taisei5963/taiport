@@ -26,7 +26,7 @@
         <div class="row">
           <div class="col-lg-9 mx-auto text-center">
             <h1 class="display-4 text-white fw-bold">
-              <?= APP_NAME ?> / <?= APP_CREATE_NAME ?>
+              TaiPort / TAISEI KATO
             </h1>
             <p class="fs-5 text-white my-3 fw-bold">This is my portfolio site.</p>
             <a href="/taiport/contact" class="btn btn-outline-light">CONTACT.</a>
