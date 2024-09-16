@@ -9,7 +9,7 @@
     <div class="only-view-sp">
       <div class="col-3"></div>
       <div class="col-6">
-        <a class="navbar-brand fs-2 ms-5" href="/taiport"><?= APP_NAME ?></a>
+        <a class="navbar-brand fs-2 ms-5" href="/taiport">Taiport</a>
       </div>
       <div class="col-3">
         <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
@@ -19,13 +19,13 @@
     </div>
 
     <div class="only-view-pc">
-      <a class="navbar-brand fs-2" href="/taiport"><?= APP_NAME ?></a>
+      <a class="navbar-brand fs-2" href="/taiport">TaiPort</a>
     </div>
 
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
       <div class="offcanvas-header">
         <h5 class="offcanvas-title fs-3 fw-bold" id="offcanvasNavbar2Label">
-          <?= APP_NAME ?>
+          TaiPort
         </h5>
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>

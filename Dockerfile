@@ -1,7 +1,7 @@
 # Use the official PHP image
 FROM php:8.2.3-apache
 
-# Set the working directory to /var/www/html
+# Set the working directory
 WORKDIR /var/www/html
 
 # Copy project files
