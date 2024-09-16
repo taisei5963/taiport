@@ -1,6 +1,8 @@
 <?php
-  require_once __DIR__.'/../config/config.php';
-  
+  if ($_SERVER['HTTP_HOST'] === "localhost") {
+    require_once __DIR__.'/../config/config.php';
+  }
+
   $page_title = 'Home';
 
   $active_home = 'active';
