@@ -19,11 +19,7 @@ $active_contact = null;
 <html lang="ja">
 
 <?php
-if ($access) {
-  include("template/head.php");
-} else {
   include("../templates/head.php");
-}
 ?>
 
 <body>
@@ -102,20 +98,12 @@ if ($access) {
 
     <!-- フッター -->
     <?php
-    if ($access) {
-      include("template/footer.php");
-    } else {
       include("../templates/footer.php");
-    }
     ?>
   </div>
 
   <?php
-  if ($access) {
-    include("template/script.php");
-  } else {
     include("../templates/script.php");
-  }
   ?>
 </body>
 
