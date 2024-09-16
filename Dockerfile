@@ -9,7 +9,16 @@ WORKDIR /var/www/config
 COPY . .
 
 # Install PHP dependencies if you have a composer.json
-RUN if [ -f "composer.json" ]; then composer install; fi
+RUN sed -i 's|/var/www/html|/var/www/html/web|' /etc/apache2/sites-available/000-default.conf
+
+# Enable .htaccess overrides
+RUN sed -i 's/AllowOverride None/AllowOverride All/' /etc/apache2/apache2.conf
+
+# Set proper permissions
+RUN chown -R www-data:www-data /var/www/html/web && chmod -R 755 /var/www/html/web
+
+# Enable mod_rewrite (if needed)
+RUN a2enmod rewrite
 
 # Expose port 80
 EXPOSE 80
