@@ -15,7 +15,7 @@ RUN sed -i 's|/var/www/html|/var/www/html/web|' /etc/apache2/sites-available/000
 RUN sed -i 's/AllowOverride None/AllowOverride All/' /etc/apache2/apache2.conf
 
 # Set proper permissions
-RUN chown -R www-data:www-data /var/www/html/web && chmod -R 755 /var/www/html/web
+# RUN chown -R www-data:www-data /var/www/html/web && chmod -R 755 /var/www/html/web
 
 # Enable mod_rewrite (if needed)
 RUN a2enmod rewrite
